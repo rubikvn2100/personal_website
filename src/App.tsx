@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Project from "./pages/Project";
+import Portfolios from "./pages/Portfolios";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/project" element={<Project />} />
+            <Route path="/project" element={<Portfolios />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>

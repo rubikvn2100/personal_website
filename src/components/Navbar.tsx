@@ -6,13 +6,16 @@ function Navbar() {
   return (
     <nav className="navbar">
       {/* <img src={process.env.PUBLIC_URL + "/avatar/avatar_32.jpg"} /> */}
-
       <Link to="/" className="router-link">
         <span className="material-symbols-outlined">home</span>
       </Link>
 
       <Link to="/" className="router-link">
-        L. Khoa
+        Khoa Le
+      </Link>
+
+      <Link to="/" className="router-link">
+        Home
       </Link>
 
       <Link to="/about" className="router-link">
@@ -20,8 +23,11 @@ function Navbar() {
       </Link>
 
       <Link to="/project" className="router-link">
-        Projects
+        Portfolios
       </Link>
+      <div>
+        <button id="navbar-contact-button">Contact</button>
+      </div>
     </nav>
   );
 }
