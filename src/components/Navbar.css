@@ -1,0 +1,40 @@
+.navbar {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #2d2323;
+  color: #e7e1e1;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar > *:hover {
+  background-color: #000000;
+}
+
+.navbar > :nth-child(2) {
+  margin-right: auto;
+  border-left: 1px #e7e1e1 solid;
+}
+
+.navbar > :last-child {
+  margin-right: 1rem;
+}
+
+.router-link {
+  color: #e7e1e1;
+  text-decoration: none;
+}
+
+.router-link:hover {
+  color: rgb(189, 98, 98);
+}
