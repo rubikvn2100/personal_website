@@ -1,5 +1,30 @@
+body {
+  background-color: #89cff0;
+}
+
 h1,
 h3 {
-  color: #89cff0;
+  color: #dff089;
   text-align: center;
+}
+
+.navbar {
+  height: 2.5rem;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar > div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-name {
+  margin-right: auto;
+  /* border-left: 1px #000000 solid; */
 }
