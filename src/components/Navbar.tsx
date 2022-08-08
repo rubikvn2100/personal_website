@@ -2,6 +2,26 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
+function NavbarLinks() {
+  return (
+    <>
+      {" "}
+      <Link to="/" className="router-link navbar-home-link">
+        Home
+      </Link>
+      <Link to="/about" className="router-link">
+        About me
+      </Link>
+      <Link to="/portfolios" className="router-link">
+        Portfolios
+      </Link>
+      <div>
+        <button className="navbar-contact-button">Contact</button>
+      </div>
+    </>
+  );
+}
+
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -15,39 +35,13 @@ function Navbar() {
           menu
         </span>
         <div className="navbar-links">
-          <Link to="/" className="router-link navbar-home-link">
-            Home
-          </Link>
-
-          <Link to="/about" className="router-link">
-            About me
-          </Link>
-
-          <Link to="/portfolios" className="router-link">
-            Portfolios
-          </Link>
-          <div>
-            <button className="navbar-contact-button">Contact</button>
-          </div>
+          <NavbarLinks />
         </div>
       </div>
       {showMenu && (
         <div className="navbar-dropdown-menu">
           <div className="navbar-links">
-            <Link to="/" className="router-link navbar-home-link">
-              Home
-            </Link>
-
-            <Link to="/about" className="router-link">
-              About me
-            </Link>
-
-            <Link to="/portfolios" className="router-link">
-              Portfolios
-            </Link>
-            <div>
-              <button className="navbar-contact-button">Contact</button>
-            </div>
+            <NavbarLinks />
           </div>
         </div>
       )}

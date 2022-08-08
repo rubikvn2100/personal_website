@@ -106,7 +106,8 @@
 
   .navbar-dropdown-menu .navbar-links > * {
     width: 95%;
-    padding: 0.2rem;
+    padding: 0.1rem;
+    margin: 0.3rem;
     display: flex;
     justify-content: space-around;
   }
