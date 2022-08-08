@@ -14,7 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   box-shadow: 0px 3px 3px -3px var(--highline-color);
 }
 
@@ -39,10 +38,10 @@
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 50px;
-  transition-duration: var(--transition-spped);
-  transition-property: background-color, color;
   color: #3f3f3f;
   text-decoration: none;
+  transition-duration: var(--transition-spped);
+  transition-property: background-color, color;
 }
 
 .navbar-main-section > .navbar-links > :last-child {
@@ -69,6 +68,8 @@
   padding: 10px;
   color: var(--highline-color);
   font-weight: bold;
+  transition-duration: var(--transition-spped);
+  transition-property: background-color, color;
 }
 
 .navbar-contact-button:hover {
@@ -79,11 +80,19 @@
 .toggle-button {
   position: absolute;
   right: 5%;
-  height: var(--navbar-height);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
   display: none;
+  justify-content: space-around;
   align-items: center;
   color: var(--highline-color);
   cursor: pointer;
+  transition-duration: var(--transition-spped);
+  transition-property: background-color, color;
+}
+.toggle-button:hover {
+  background-color: var(--bg-hover-color);
 }
 
 .navbar-dropdown-menu {
@@ -108,10 +117,14 @@
 
   .navbar-dropdown-menu .navbar-links > * {
     width: 7rem;
-    padding: 0.2rem;
-    margin: 0.2rem;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: space-around;
+  }
+  .navbar-dropdown-menu .navbar-links > :last-child {
+    padding: 0;
+    margin-bottom: 1rem;
   }
 
   .navbar-dropdown-menu {
