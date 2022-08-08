@@ -5,16 +5,11 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      {/* <img src={process.env.PUBLIC_URL + "/avatar/avatar_32.jpg"} /> */}
-      <Link to="/" className="router-link">
-        <span className="material-symbols-outlined">home</span>
-      </Link>
-
-      <Link to="/" className="router-link">
+      <Link to="/" className="router-link" id="navbar-name">
         Khoa Le
       </Link>
 
-      <Link to="/" className="router-link">
+      <Link to="/" className="router-link" id="navbar-home-link">
         Home
       </Link>
 
@@ -22,7 +17,7 @@ function Navbar() {
         About me
       </Link>
 
-      <Link to="/project" className="router-link">
+      <Link to="/portfolios" className="router-link">
         Portfolios
       </Link>
       <div>

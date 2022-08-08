@@ -5,7 +5,6 @@
   background-color: #ffffff;
   font-weight: bold;
   font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar > * {
@@ -16,44 +15,37 @@
   align-items: center;
 }
 
-.material-symbols-outlined {
-  font-size: 2rem;
+#navbar-name,
+#navbar-home-link {
   color: #11bc7a;
 }
 
-.navbar > :nth-child(2) {
-  color: #11bc7a;
+#navbar-name {
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Great Vibes", cursive;
   font-size: 2rem;
-  padding: 0px 30px;
+  font-weight: normal;
+  padding: 0px 7rem;
   margin-right: auto;
-  border-left: 1px solid #11bc7a;
-}
-
-.navbar > :nth-child(3) {
-  color: #11bc7a;
 }
 
 .navbar > :last-child {
   margin-right: 1rem;
 }
 
-.navbar > :nth-child(1):hover,
-.navbar > :nth-child(2):hover,
-.navbar > :nth-child(3):hover {
-  border-radius: 5px;
-  background-color: #bbecd7;
-  color: white;
-}
-
-.navbar > :nth-child(4):hover,
-.navbar > :nth-child(5):hover {
-  border-radius: 5px;
-  background-color: #bbecd7;
-}
-
 .router-link {
   color: #3f3f3f;
   text-decoration: none;
+}
+
+.router-link:hover {
+  border-radius: 5px;
+  background-color: #bbecd7;
+}
+
+#navbar-name:hover,
+#navbar-home-link:hover {
+  color: white;
 }
 
 #navbar-contact-button {
