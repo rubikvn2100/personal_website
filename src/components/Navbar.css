@@ -52,14 +52,6 @@
   color: var(--highline-color);
 }
 
-.router-link:hover {
-  background-color: var(--bg-hover-color);
-}
-
-.navbar-home-link:hover {
-  color: white;
-}
-
 .navbar-contact-button {
   width: 7rem;
   background-color: #fefefe;
@@ -91,12 +83,28 @@
   transition-duration: var(--transition-spped);
   transition-property: background-color, color;
 }
-.toggle-button:hover {
-  background-color: var(--bg-hover-color);
-}
 
 .navbar-dropdown-menu {
   display: none;
+}
+
+@media (hover: hover) {
+  .router-link:hover {
+    background-color: var(--bg-hover-color);
+  }
+
+  .navbar-home-link:hover {
+    color: white;
+  }
+
+  .navbar-contact-button:hover {
+    background-color: var(--bg-hover-color);
+    color: white;
+  }
+
+  .toggle-button:hover {
+    background-color: var(--bg-hover-color);
+  }
 }
 
 @media (max-width: 600px) {
