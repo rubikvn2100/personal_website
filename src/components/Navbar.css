@@ -2,8 +2,8 @@
   background-color: #ffffff;
   font-weight: bold;
   font-size: large;
-  --highline-color: #11bc7a;
-  --bg-hover-color: #bbecd7;
+  --highline-color: #0060ff;
+  --bg-hover-color: #d5e6fb;
   --transition-spped: 400ms;
   --navbar-height: 4rem;
   padding-bottom: 5px;
@@ -20,11 +20,15 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-family: "Great Vibes", cursive;
+  /* font-family: "Great Vibes", cursive; */
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: bold;
   color: var(--highline-color);
   margin-left: 5%;
+}
+
+.navbar-brand > :nth-child(1) {
+  color: black;
 }
 
 .navbar-main-section > .navbar-links {
@@ -64,11 +68,6 @@
   transition-property: background-color, color;
 }
 
-.navbar-contact-button:hover {
-  background-color: var(--bg-hover-color);
-  color: white;
-}
-
 .toggle-button {
   position: absolute;
   right: 5%;
@@ -93,13 +92,13 @@
     background-color: var(--bg-hover-color);
   }
 
-  .navbar-home-link:hover {
+  /* .navbar-home-link:hover {
     color: white;
-  }
+  } */
 
   .navbar-contact-button:hover {
     background-color: var(--bg-hover-color);
-    color: white;
+    /* color: red; */
   }
 
   .toggle-button:hover {

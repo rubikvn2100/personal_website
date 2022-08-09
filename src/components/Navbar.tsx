@@ -27,7 +27,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-main-section">
-        <div className="navbar-brand">Khoa Le</div>
+        <div className="navbar-brand">
+          <span>Khoa</span>
+          <span>Le</span>
+        </div>
         <span
           className="material-symbols-outlined toggle-button"
           onClick={() => setShowMenu(!showMenu)}
