@@ -1,0 +1,17 @@
+.introduction {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.CV-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .CV-card {
+    flex-direction: column;
+  }
+}

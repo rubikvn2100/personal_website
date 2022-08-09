@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <div className="contain">
+        <div className="page-body">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -20,9 +20,6 @@ function App() {
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>
-
-        <h1>Hello World!!!</h1>
-        <h3>(from Khoa Le)</h3>
       </BrowserRouter>
     </div>
   );
