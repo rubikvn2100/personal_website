@@ -6,7 +6,9 @@ function BusinessCard() {
     <div className="business-card">
       <img
         className="home-page-avatar"
-        src="https://github.com/rubikvn2100/personal_website/blob/main/public/avatar/avatar_512.jpg?raw=true"
+        // src="https://github.com/rubikvn2100/personal_website/blob/main/public/avatar/avatar_128.jpg?raw=true"
+        src={process.env.PUBLIC_URL + "/avatar/avatar_128.jpg"}
+        alt="My avatar"
       />
       <span className="business-card-name">Khoa Le</span>
       <div className="business-card-seperator"></div>
@@ -20,13 +22,22 @@ function BusinessCard() {
       </p>
       <div className="business-card-contact">
         <a href="https://github.com/rubikvn2100">
-          <img src={process.env.PUBLIC_URL + "/icons/logo-github.svg"} />
+          <img
+            src={process.env.PUBLIC_URL + "/icons/logo-github.svg"}
+            alt="Github logo"
+          />
         </a>
         <a href="https://www.linkedin.com/in/khoale2100/">
-          <img src={process.env.PUBLIC_URL + "/icons/logo-linkedin.svg"} />
+          <img
+            src={process.env.PUBLIC_URL + "/icons/logo-linkedin.svg"}
+            alt="Linkedin logo"
+          />
         </a>
         <a href="https://youtu.be/NySCUOnjZss">
-          <img src={process.env.PUBLIC_URL + "/icons/logo-youtube.svg"} />
+          <img
+            src={process.env.PUBLIC_URL + "/icons/logo-youtube.svg"}
+            alt="Youtube logo"
+          />
         </a>
       </div>
     </div>
