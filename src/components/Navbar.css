@@ -5,8 +5,8 @@
   --highline-color: #0060ff;
   --bg-hover-color: #d5e6fb;
   --transition-spped: 400ms;
-  --navbar-height: 4rem;
-  padding-bottom: 5px;
+  --navbar-height: 3rem;
+  margin-bottom: 1px;
 }
 
 .navbar-main-section {
@@ -56,7 +56,7 @@
   color: var(--highline-color);
 }
 
-.navbar-contact-button {
+/* .navbar-contact-button {
   width: 7rem;
   background-color: #fefefe;
   border: 1px solid var(--highline-color);
@@ -66,7 +66,7 @@
   font-weight: bold;
   transition-duration: var(--transition-spped);
   transition-property: background-color, color;
-}
+} */
 
 .toggle-button {
   position: absolute;
@@ -129,9 +129,9 @@
     display: flex;
     justify-content: space-around;
   }
+
   .navbar-dropdown-menu .navbar-links > :last-child {
-    padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .navbar-dropdown-menu {

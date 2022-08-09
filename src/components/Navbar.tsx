@@ -15,9 +15,12 @@ function NavbarLinks() {
       <Link to="/portfolios" className="router-link">
         Portfolios
       </Link>
-      <div>
+      <Link to="/contact" className="router-link">
+        Contact
+      </Link>
+      {/* <div>
         <button className="navbar-contact-button">Contact</button>
-      </div>
+      </div> */}
     </>
   );
 }
