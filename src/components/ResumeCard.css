@@ -1,0 +1,49 @@
+.resume-card-list {
+  width: 90vw;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #f4ece6f0;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.card > * {
+  width: 85%;
+  margin: 0 auto 5px auto;
+}
+
+.card-headline {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-seperator {
+  border-bottom: 2px solid #0060ff;
+}
+
+.card-bullet-point {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bullet-point > :first-child {
+  font-weight: bold;
+}
+
+.resume-card-job-title {
+  font-size: 2rem;
+}
+
+.resume-card-description {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}

@@ -12,12 +12,12 @@ function NavbarLinks() {
       <Link to="/about" className="router-link">
         About me
       </Link>
-      <Link to="/portfolios" className="router-link">
+      {/* <Link to="/portfolios" className="router-link">
         Portfolios
       </Link>
       <Link to="/contact" className="router-link">
         Contact
-      </Link>
+      </Link> */}
       {/* <div>
         <button className="navbar-contact-button">Contact</button>
       </div> */}
@@ -33,6 +33,7 @@ function Navbar() {
         <div className="navbar-brand">
           <span>Khoa</span>
           <span>Le</span>
+          <span>S.E.</span>
         </div>
         <span
           className="material-symbols-outlined toggle-button"
